@@ -1,0 +1,124 @@
+:root {
+  --bg: #0a0e11;
+  --panel: #111a21;
+  --rim: #1f3346;
+  --text: #d7e3ee;
+  --muted: #8ea3b5;
+  --accent: #4c8dd6;
+  --bright: #b4d3f5;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header.top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--rim);
+}
+
+header.top a.home {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+header.top nav { margin-left: auto; display: flex; gap: 16px; flex-wrap: wrap; }
+
+a { color: var(--bright); }
+a:hover { color: #fff; }
+
+h1 {
+  font-size: 28px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 19px;
+  margin: 32px 0 8px;
+  color: var(--bright);
+}
+
+p, li { color: var(--text); }
+
+.muted { color: var(--muted); font-size: 14px; }
+
+.lang {
+  display: inline-block;
+  margin: 4px 0 24px;
+  padding: 6px 12px;
+  border: 1px solid var(--rim);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+section.part {
+  padding-top: 8px;
+}
+
+section.part + section.part {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rim);
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--rim);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+
+.hero img {
+  width: 120px;
+  height: 120px;
+  border-radius: 27px;
+  box-shadow: 0 0 40px rgba(76, 141, 214, 0.35);
+}
+
+.hero h1 { font-size: 34px; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 20px; }
+
+.links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+
+.links a {
+  padding: 10px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
